@@ -1,0 +1,114 @@
+@use "../util/" as *;
+
+.btn{
+    cursor: pointer;
+    width: max-content;
+    padding: 1rem 4rem;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.circle{
+    width: 10rem;
+    aspect-ratio: 1/1;
+    position: fixed;
+    background-color: var(--blue-500);
+    border-radius: 500px;
+    top: -50px;
+    left: -60px;
+    z-index: 99;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.down-arrow{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    img{
+        width: 3.5rem;
+        margin: 2rem 0 1rem;
+
+    }
+}
+
+.title{
+    &-h1{
+        font-size: var(--md-40);
+        font-weight: 700;
+        position: relative;
+
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: -0.5rem;
+            left: 0;
+            width: 4rem;
+            height: 0.2rem;
+            border-radius: 5rem;
+            background:linear-gradient(43.48deg, #4312A5 -3.88%, #6233DF 32.32%, #849BFF 137.32%) ;
+        }
+    }
+    &-p{
+        font-size: var(--sm-16);
+        font-weight: 400;
+        color: var(--gray-100);
+        line-height: 1.7;
+        letter-spacing: 1px;
+    }
+}
+
+.arrow{
+    padding-right: 1.8rem;
+    &-container{
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+        width: max-content;
+        span{
+            display: block;
+            width: 1.5rem;
+            aspect-ratio: 1/1;
+            border-top: 5px solid var(--pink-500);
+            border-right: 5px solid var(--pink-500);
+            rotate: 45deg;
+            animation: scroll 2s infinite;
+            &:last-child,&:nth-child(2){
+                margin-left: -10px;
+            }
+
+            &:nth-child(2){
+                animation-delay: -.2s;
+            }
+
+            &:last-child{
+                animation-delay: -.4s;
+            }
+        }
+    }
+}
+
+@keyframes scroll{
+    0%{
+        opacity: 0;
+        rotate: 45deg;
+        translate: -30px 0;
+    }
+    50%{
+        opacity: 1;
+    }
+   100%{
+        opacity: 0;
+        rotate: 45deg;
+        translate: 30px 0;
+    }
+}
+
+@include breakpoint(mobile){
+    .circle{
+        display: none;
+    }
+
+    .arrow{
+        display: none;
+    }
+}

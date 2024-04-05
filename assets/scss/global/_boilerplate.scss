@@ -1,0 +1,59 @@
+@use "../util/" as *;
+
+:root{
+    --mobile-header-cl:0rem;
+    --header-cl:4.625rem;
+    --header-ol:22.25rem;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--black-100);
+    outline: 1px solid slategrey;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--black-100);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 5rem;
+    background: var(--blue-500);
+}
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 100%;
+}
+
+body{
+    font-family: var(--ff-main);
+    color: var(--neutral-100);
+    // background-color: var(--black-100);
+    background: linear-gradient(43.48deg, #000000 -3.88%, #111111 32.32%, #232323 137.32%);;
+    padding: 0rem 1.5rem;
+    transition: .5s;
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: var(--neutral-100);
+    text-decoration: none;
+}
+
+@include breakpoint(mobile){
+    body{
+        padding: 2rem 2rem 2rem 7rem;
+    }
+}
