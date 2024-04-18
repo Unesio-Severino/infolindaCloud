@@ -21,6 +21,14 @@
 
 
   <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css"
+    integrity="sha512-UuQ/zJlbMVAw/UU8vVBhnI4op+/tFOpQZVT+FormmIEhRSCnJWyHiBbEVgM4Uztsht41f3FzVWgLuwzUqOObKw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link href="assets/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/libs/ionicons/css/ionicons.min.css" rel="stylesheet">
@@ -68,7 +76,7 @@
                       </div>
 
                       <div class="col-lg-6 col-md-6 box wow bounceInUp" data-aos="zoom-in" data-aos-delay="400">
-                        <div class="icon"><i class="fa fa-2x fa-exchange-alt"></i></div>
+                        <div class="icon"><i class="fa fa-2x fa-exchange"></i></div>
                         <h4 class="title"><a href="">Transferencia</a></h4>
                         <p class="description">Nossas soluções de Alojamento Partilhado são perfeitas para o site de
                           pequenas e médias empresas.
@@ -97,7 +105,7 @@
                       </div>
 
                       <div class="col-lg-6 col-md-6 box wow bounceInUp" data-aos="zoom-in" data-aos-delay="400">
-                        <div class="icon"><i class="fa fa-2x fa-wallet"></i></div>
+                        <div class="icon"><i class="fa fa-credit-card-alt"></i></div>
                         <h4 class="title"><a href="">Revenda De Alojamento</a></h4>
                         <p class="description">Revenda de Alojamento Web Linux e Windows para sua própria base
                           de clientes.
@@ -242,7 +250,6 @@
     </div>
   </section><!-- End Hero -->
 
-
   <main id="main">
     <!-- domain section  -->
     <section class="domain_section" id="domain_section" data-aos="fade-up">
@@ -263,7 +270,7 @@
         </div>
       </div>
     </section>
-    <!-- ----- -->
+    <!-- -- End of domain section -- -->
 
     <!-- ======= Pricing Section ======= -->
     <section id="pricing" class="pricing">
@@ -1382,19 +1389,6 @@
             </div>
           </div>
         </div>
-
-        <div class="container mt-4">
-          <header class="section-header">
-            <button data-open-modal>
-              <h3>Termos de pagamento</h3>
-            </button>
-          </header>
-        </div>
-
-        <dialog>
-
-        </dialog>
-
       </div>
 
     </section><!-- End Pricing Section -->
@@ -1496,36 +1490,37 @@
     <section id="values" class="values">
       <div class="container" data-aos="fade-up">
         <header class="section-header">
-          <h2>Our Values</h2>
-          <p>Odit est perspiciatis laborum et dicta</p>
+          <p>Motivos para escolha da Infolinda</p>
+          <h3>A Infolinda tem tudo para você garantir sua presença online.</h3>
         </header>
         <div class="row">
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
             <div class="box">
-              <img src="assets/img/values-1.png" class="img-fluid" alt="">
-              <h3>Ad cupiditate sed est odio</h3>
-              <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p>
+              <img src="assets/img/domain-name-2.png" class=" img-fluid" alt="">
+              <h3>Registo de Dominios</h3>
+              <p>Registámos qualquer nome de domínio que você deseja, basta solicitar que iremos
+                personalizar o pedido para você.</p>
             </div>
           </div>
 
           <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
             <div class="box">
-              <img src="assets/img/values-2.png" class="img-fluid" alt="">
-              <h3>Voluptatem voluptatum alias</h3>
-              <p>Repudiandae amet nihil natus in distinctio suscipit id. Doloremque ducimus ea sit non.</p>
+              <img src="assets/img/database-performance.svg" class="img-fluid" alt="">
+              <h3>Otimização de Servidores</h3>
+              <p>Servidores com alto desempenho e com soluções de armazenamento muito bem otimizados do tamanho do seu
+                negocio.</p>
             </div>
           </div>
 
           <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
             <div class="box">
-              <img src="assets/img/values-3.png" class="img-fluid" alt="">
-              <h3>Fugit cupiditate alias nobis.</h3>
-              <p>Quam rem vitae est autem molestias explicabo debitis sint. Vero aliquid quidem commodi.</p>
+              <img src="assets/img/24-7-support-service.png" class="img-fluid" alt="">
+              <h3>Suporte ao Cliente 24/7</h3>
+              <p>
+                Receba ajuda dos nossos agentes a qualquer momento através do apoio 24 horas por dia.</p>
             </div>
           </div>
-
         </div>
-
       </div>
     </section><!-- End Values Section -->
 
@@ -2387,36 +2382,9 @@
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
-  </footer><!-- End Footer -->
+  </footer>
+  <!-- End Footer -->
 
-  <!-- MODAL DIALOG JS SCRIPT -->
-  <script>
-    const dialog = document.getElementById('dialog');
-    const text = document.getElementById('text');
-    const jsbutton = document.getElementById('closeIt');
-    const modalless = document.getElementById('modalless');
-    const reset = document.getElementById('reset');
-
-    modalless.addEventListener('click', (event) => {
-      dialog.show();
-      text.textContent = '';
-    });
-
-    jsbutton.addEventListener('click', (event) => {
-      dialog.close();
-      text.innerHTML += '"close the dialog" closed the dialog.<br />';
-    });
-
-
-    dialog.addEventListener('cancel', (event) => {
-      text.innerHTML += 'cance event happened<br />';
-    });
-
-    dialog.addEventListener('close', (event) => {
-      text.innerHTML += 'close event happened<br />';
-    });
-  </script>
-  <!-- End MODAL DIALOG JS SCRIPT -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
