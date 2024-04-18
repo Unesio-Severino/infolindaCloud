@@ -26,9 +26,6 @@
   <link href="assets/libs/ionicons/css/ionicons.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link
-    href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css"
-    rel="stylesheet">
 
   <!-- Libs Files -->
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
@@ -38,6 +35,8 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/scss/main.css" rel="stylesheet">
+  <link href="assets/layouts/modal/modal_terms.css" rel="stylesheet">
+
 
 </head>
 
@@ -46,7 +45,6 @@
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-
       <a href="index.html" class="logo d-flex align-items-center">
         <img src="assets/img/InfoLinda-Logo.png" alt="InfoLinda-Logo">
         <span>Infolinda</span>
@@ -175,7 +173,7 @@
             </li>
 
             <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
-            <li><a class="getstarted" href="#">Log in</a></li>
+            <li><a class="getstarted" href="auth.infolinda.portal.html">Log in</a></li>
 
           </ul>
         </div>
@@ -195,15 +193,30 @@
           <h2 data-aos="fade-up" data-aos-delay="400">Até menos 75% em Alojamento + certificado SSL gratuito, instalação
             fácil de WordPress.</h2>
           <p>
-            <img src="assets/img/correct.png" alt=" Domínio">
+            <svg data-v-7fc192fd="" data-v-0561eb7e="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 24"
+              aria-label="check" style="width: 12px; height: 24px;">
+              <path fill="#00B090"
+                d="M12 8.758a.694.694 0 0 1-.217.515l-5.605 5.485-1.053 1.03A.725.725 0 0 1 4.6 16a.724.724 0 0 1-.527-.212l-1.053-1.03-2.803-2.743A.694.694 0 0 1 0 11.5c0-.202.072-.374.217-.515l1.053-1.03a.725.725 0 0 1 .526-.213c.207 0 .382.071.527.213L4.6 12.19l5.078-4.977c.14-.14.33-.216.527-.212.206 0 .382.07.526.212l1.053 1.03c.142.134.22.321.217.516Z">
+              </path>
+            </svg>
             Domínio grátis
           </p>
           <p>
-            <img src="assets/img/correct.png" alt=" Migração">
+            <svg data-v-7fc192fd="" data-v-0561eb7e="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 24"
+              aria-label="check" style="width: 12px; height: 24px;">
+              <path fill="#00B090"
+                d="M12 8.758a.694.694 0 0 1-.217.515l-5.605 5.485-1.053 1.03A.725.725 0 0 1 4.6 16a.724.724 0 0 1-.527-.212l-1.053-1.03-2.803-2.743A.694.694 0 0 1 0 11.5c0-.202.072-.374.217-.515l1.053-1.03a.725.725 0 0 1 .526-.213c.207 0 .382.071.527.213L4.6 12.19l5.078-4.977c.14-.14.33-.216.527-.212.206 0 .382.07.526.212l1.053 1.03c.142.134.22.321.217.516Z">
+              </path>
+            </svg>
             Migração de sites gratuita
           </p>
           <p>
-            <img src="assets/img/correct.png" alt=" apoio">
+            <svg data-v-7fc192fd="" data-v-0561eb7e="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 24"
+              aria-label="check" style="width: 12px; height: 24px;">
+              <path fill="#00B090"
+                d="M12 8.758a.694.694 0 0 1-.217.515l-5.605 5.485-1.053 1.03A.725.725 0 0 1 4.6 16a.724.724 0 0 1-.527-.212l-1.053-1.03-2.803-2.743A.694.694 0 0 1 0 11.5c0-.202.072-.374.217-.515l1.053-1.03a.725.725 0 0 1 .526-.213c.207 0 .382.071.527.213L4.6 12.19l5.078-4.977c.14-.14.33-.216.527-.212.206 0 .382.07.526.212l1.053 1.03c.142.134.22.321.217.516Z">
+              </path>
+            </svg>
             Apoio ao cliente 24/7
           </p>
 
@@ -216,7 +229,7 @@
               </a>
             </div>
             <p>
-              <img src="assets/libs/bootstrap-icons/bootstrap-icons/shield-plus.svg">
+              <img src="assets/img/shield.png" alt="garantia" />
               Garantia de 30 dias
             </p>
           </div>
@@ -255,7 +268,7 @@
     <!-- ======= Pricing Section ======= -->
     <section id="pricing" class="pricing">
       <div class="container" data-aos="fade-up">
-        <header class="section-header">
+        <header class="section-header mt-3">
           <p>Escolha o seu plano perfeito</p>
           <h3>Comece com confiança total. A nossa garantia de reembolso de 30 dias significa que não há riscos.</h3>
         </header>
@@ -1368,8 +1381,19 @@
               </div>
             </div>
           </div>
-
         </div>
+
+        <div class="container mt-4">
+          <header class="section-header">
+            <button data-open-modal>
+              <h3>Termos de pagamento</h3>
+            </button>
+          </header>
+        </div>
+
+        <dialog>
+
+        </dialog>
 
       </div>
 
@@ -1418,20 +1442,47 @@
 
         </div>
       </div>
-
     </section><!-- End About Section -->
 
     <!-- ======= Support Section ======= -->
     <section class="details" id="details">
-      <div class="details-container">
+      <div class="details-container" data-aos="fade-up">
         <div class="details-container-box details-container-box-2">
-          <div class="details-container-box-text" data-aos="fade-up">
-            <h3><span>PERFORMANCE</span> AND SPEED</h3>
-            <h1>Lightning-fast websites</h1>
-            <p class="title-p">Website speed can slow or grow your business. Delight your visitors with a
-              fast-loading and optimized website.</p>
-            <a href="#">Learn more</a>
+          <div class="details-container-box-text" data-aos="fade-up" data-aos-delay="200">
+            <h3><span>Desempenho</span> e Velocidade</h3>
+            <h1>Velocidade do seu site maximizada</h1>
+            <p>
+              <svg data-v-7fc192fd="" data-v-0561eb7e="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 24"
+                aria-label="check" style="width: 12px; height: 24px;">
+                <path fill="#00B090"
+                  d="M12 8.758a.694.694 0 0 1-.217.515l-5.605 5.485-1.053 1.03A.725.725 0 0 1 4.6 16a.724.724 0 0 1-.527-.212l-1.053-1.03-2.803-2.743A.694.694 0 0 1 0 11.5c0-.202.072-.374.217-.515l1.053-1.03a.725.725 0 0 1 .526-.213c.207 0 .382.071.527.213L4.6 12.19l5.078-4.977c.14-.14.33-.216.527-.212.206 0 .382.07.526.212l1.053 1.03c.142.134.22.321.217.516Z">
+                </path>
+              </svg>
+              Maximize a velocidade de carregamento do site com a tecnologia LiteSpeed Web Server.
+            </p>
+
+            <p>
+              <svg data-v-7fc192fd="" data-v-0561eb7e="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 24"
+                aria-label="check" style="width: 12px; height: 24px;">
+                <path fill="#00B090"
+                  d="M12 8.758a.694.694 0 0 1-.217.515l-5.605 5.485-1.053 1.03A.725.725 0 0 1 4.6 16a.724.724 0 0 1-.527-.212l-1.053-1.03-2.803-2.743A.694.694 0 0 1 0 11.5c0-.202.072-.374.217-.515l1.053-1.03a.725.725 0 0 1 .526-.213c.207 0 .382.071.527.213L4.6 12.19l5.078-4.977c.14-.14.33-.216.527-.212.206 0 .382.07.526.212l1.053 1.03c.142.134.22.321.217.516Z">
+                </path>
+              </svg>
+              Desfrute de um desempenho otimizado com soluções avançadas.
+            </p>
+
+            <p>
+              <svg data-v-7fc192fd="" data-v-0561eb7e="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 24"
+                aria-label="check" style="width: 12px; height: 24px;">
+                <path fill="#00B090"
+                  d="M12 8.758a.694.694 0 0 1-.217.515l-5.605 5.485-1.053 1.03A.725.725 0 0 1 4.6 16a.724.724 0 0 1-.527-.212l-1.053-1.03-2.803-2.743A.694.694 0 0 1 0 11.5c0-.202.072-.374.217-.515l1.053-1.03a.725.725 0 0 1 .526-.213c.207 0 .382.071.527.213L4.6 12.19l5.078-4.977c.14-.14.33-.216.527-.212.206 0 .382.07.526.212l1.053 1.03c.142.134.22.321.217.516Z">
+                </path>
+              </svg>
+              Encante seus visitantes com um site otimizado e de carregamento rápido.
+            </p>
+
           </div>
+
           <div class="details-container-box-video order-2" data-aos="fade-up">
             <video src="https://assets.hostinger.com/videos/homepage2020/simply-fast-websites-ad53591419.mp4" muted
               autoplay loop></video>
@@ -1476,7 +1527,6 @@
         </div>
 
       </div>
-
     </section><!-- End Values Section -->
 
 
@@ -1697,14 +1747,11 @@
         </div><!-- End Feature Icons -->
 
       </div>
-
     </section><!-- End Features Section -->
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
-
       <div class="container" data-aos="fade-up">
-
         <header class="section-header">
           <h2>Services</h2>
           <p>Veritatis et dolores facere numquam et praesentium</p>
@@ -1775,19 +1822,15 @@
         </div>
 
       </div>
-
     </section><!-- End Services Section -->
 
     <!-- ======= F.A.Q Section ======= -->
     <section id="faq" class="faq">
-
       <div class="container" data-aos="fade-up">
-
         <header class="section-header">
           <h2>F.A.Q</h2>
           <p>Frequently Asked Questions</p>
         </header>
-
         <div class="row">
           <div class="col-lg-6">
             <!-- F.A.Q List 1-->
@@ -1903,14 +1946,11 @@
         </div>
 
       </div>
-
     </section><!-- End F.A.Q Section -->
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
-
       <div class="container" data-aos="fade-up">
-
         <header class="section-header">
           <h2>Testimonials</h2>
           <p>What they are saying about us</p>
@@ -2014,14 +2054,11 @@
         </div>
 
       </div>
-
     </section><!-- End Testimonials Section -->
 
     <!-- ======= Team Section ======= -->
     <section id="team" class="team">
-
       <div class="container" data-aos="fade-up">
-
         <header class="section-header">
           <h2>Team</h2>
           <p>Our hard working team</p>
@@ -2112,14 +2149,11 @@
         </div>
 
       </div>
-
     </section><!-- End Team Section -->
 
     <!-- ======= Clients Section ======= -->
     <section id="clients" class="clients">
-
       <div class="container" data-aos="fade-up">
-
         <header class="section-header">
           <h2>Our Clients</h2>
           <p>Temporibus omnis officia</p>
@@ -2139,14 +2173,11 @@
           <div class="swiper-pagination"></div>
         </div>
       </div>
-
     </section><!-- End Clients Section -->
 
     <!-- ======= Recent Blog Posts Section ======= -->
     <section id="recent-blog-posts" class="recent-blog-posts">
-
       <div class="container" data-aos="fade-up">
-
         <header class="section-header">
           <h2>Blog</h2>
           <p>Recent posts form our Blog</p>
@@ -2187,19 +2218,15 @@
         </div>
 
       </div>
-
     </section><!-- End Recent Blog Posts Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
-
       <div class="container" data-aos="fade-up">
-
         <header class="section-header">
           <h2>Contact</h2>
           <p>Contact Us</p>
         </header>
-
         <div class="row gy-4">
 
           <div class="col-lg-6">
@@ -2273,8 +2300,8 @@
         </div>
 
       </div>
-
     </section><!-- End Contact Section -->
+
 
   </main><!-- End #main -->
 
@@ -2357,10 +2384,39 @@
         &copy; Copyright <strong><span>FlexStart</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-           Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
   </footer><!-- End Footer -->
+
+  <!-- MODAL DIALOG JS SCRIPT -->
+  <script>
+    const dialog = document.getElementById('dialog');
+    const text = document.getElementById('text');
+    const jsbutton = document.getElementById('closeIt');
+    const modalless = document.getElementById('modalless');
+    const reset = document.getElementById('reset');
+
+    modalless.addEventListener('click', (event) => {
+      dialog.show();
+      text.textContent = '';
+    });
+
+    jsbutton.addEventListener('click', (event) => {
+      dialog.close();
+      text.innerHTML += '"close the dialog" closed the dialog.<br />';
+    });
+
+
+    dialog.addEventListener('cancel', (event) => {
+      text.innerHTML += 'cance event happened<br />';
+    });
+
+    dialog.addEventListener('close', (event) => {
+      text.innerHTML += 'close event happened<br />';
+    });
+  </script>
+  <!-- End MODAL DIALOG JS SCRIPT -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
