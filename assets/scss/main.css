@@ -187,9 +187,9 @@ section {
 }
 
 .details-container {
-  padding: 20px 0;
+  padding: 40px;
   display: grid;
-  gap: 6rem;
+  gap: 4rem;
 }
 
 .details-container-box {
@@ -221,7 +221,6 @@ section {
 
 .details-container-box-text h1 {
   font-size: var(--md-40);
-  text-transform: capitalize;
   letter-spacing: 1px;
   font-weight: 500;
   color: #012970;
@@ -258,6 +257,7 @@ section {
 
 .details-container-box-video {
   grid-row: 1;
+  padding: 40px;
   place-self: center;
   width: 100%;
   border-radius: 1rem;
@@ -291,3 +291,4 @@ section {
     grid-column: 1;
   }
 }
+
