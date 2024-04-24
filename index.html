@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Infolinda - Serviços de Registo de Domínio</title>
@@ -14,10 +14,11 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap">
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" />
 
 
   <!-- Vendor CSS Files -->
@@ -48,6 +49,7 @@
 
 <body>
 
+
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
@@ -55,10 +57,9 @@
         <img src="assets/img/InfoLinda-Logo.png" alt="InfoLinda-Logo">
         <span>Infolinda</span>
       </a>
-      <nav id="navbar" class="navbar">
+      <nav id="navbar" class="navbar" role="navigation">
         <div class="container" data-aos="fade-up">
           <ul>
-
             <div class="row">
               <li class="dropdown megamenu">
                 <a href="#"><span>Domínios</span><i class="bi bi-chevron-down"></i></a>
@@ -247,14 +248,14 @@
           (Escolha
           entre .co.mz,
           .com, .info, .live,
-          .store, .net & muito mais)
+          .store, .net e muito mais)
         </p>
       </div>
       <div class="domain-container">
         <div class="domain-container-search">
           <input type="text" class="domain-container-search-textarea"
             placeholder="Introduza o nome do dominio pretendido">
-          <button class="search-btn">Pesquisar</button>
+          <button class="search-btn btn-lg">Pesquisar</button>
         </div>
       </div>
     </section>
@@ -263,18 +264,19 @@
     <!-- ======= Pricing Section ======= -->
     <section id="pricing" class="pricing">
       <div class="container" data-aos="fade-up">
-        <header class="section-header mt-3">
+        <header class="section-header">
           <p>Escolha o seu plano perfeito</p>
           <h3>Comece com confiança total. A nossa garantia de reembolso de 30 dias significa que não há riscos.</h3>
         </header>
 
         <div class="row gy-4" data-aos="fade-left">
-          <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="300">
+          <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="300" data-wow-duration=".3"
+            data-wow-delay=".1s">
             <div class="box">
               <b>
                 <h3 style="color: #07d5c0;">Starter</h3>
               </b>
-              <span style="color:#2F1C6A;" class="text-sm mt-4 mb-3">Plano perfeito para portfolio pessoais e
+              <span style="color:#271366;" class="mt-4 mb-3">Plano perfeito para portfolio pessoais e
                 <br>websites
               </span>
               <div class="price"><sup>MT </sup>450<span>/ mês</span></div>
@@ -295,7 +297,7 @@
                           d="M12 8.758a.694.694 0 0 1-.217.515l-5.605 5.485-1.053 1.03A.725.725 0 0 1 4.6 16a.724.724 0 0 1-.527-.212l-1.053-1.03-2.803-2.743A.694.694 0 0 1 0 11.5c0-.202.072-.374.217-.515l1.053-1.03a.725.725 0 0 1 .526-.213c.207 0 .382.071.527.213L4.6 12.19l5.078-4.977c.14-.14.33-.216.527-.212.206 0 .382.07.526.212l1.053 1.03c.142.134.22.321.217.516Z">
                         </path>
                       </svg>
-                      <span style="color:#2F1C6A;" class="text-sm">
+                      <span style="color:#271366;" class="text-sm">
                         <span class="text-sm font-semibold">
                           Desempenho Padrão </span>
                       </span>
@@ -308,7 +310,7 @@
                           d="M12 8.758a.694.694 0 0 1-.217.515l-5.605 5.485-1.053 1.03A.725.725 0 0 1 4.6 16a.724.724 0 0 1-.527-.212l-1.053-1.03-2.803-2.743A.694.694 0 0 1 0 11.5c0-.202.072-.374.217-.515l1.053-1.03a.725.725 0 0 1 .526-.213c.207 0 .382.071.527.213L4.6 12.19l5.078-4.977c.14-.14.33-.216.527-.212.206 0 .382.07.526.212l1.053 1.03c.142.134.22.321.217.516Z">
                         </path>
                       </svg>
-                      <span style="color:#2F1C6A;" class="text-sm">
+                      <span style="color:#271366;" class="text-sm">
                         <span class="text-sm font-semibold">
                           10</span> Sites
                       </span>
@@ -321,7 +323,7 @@
                           d="M12 8.758a.694.694 0 0 1-.217.515l-5.605 5.485-1.053 1.03A.725.725 0 0 1 4.6 16a.724.724 0 0 1-.527-.212l-1.053-1.03-2.803-2.743A.694.694 0 0 1 0 11.5c0-.202.072-.374.217-.515l1.053-1.03a.725.725 0 0 1 .526-.213c.207 0 .382.071.527.213L4.6 12.19l5.078-4.977c.14-.14.33-.216.527-.212.206 0 .382.07.526.212l1.053 1.03c.142.134.22.321.217.516Z">
                         </path>
                       </svg>
-                      <span style="color:#2F1C6A;" class="text-sm">
+                      <span style="color:#271366;" class="text-sm">
                         <span class="text-sm font-semibold">
                           100 GB</span> Espaço SSD
                       </span>
@@ -334,7 +336,7 @@
                           d="M12 8.758a.694.694 0 0 1-.217.515l-5.605 5.485-1.053 1.03A.725.725 0 0 1 4.6 16a.724.724 0 0 1-.527-.212l-1.053-1.03-2.803-2.743A.694.694 0 0 1 0 11.5c0-.202.072-.374.217-.515l1.053-1.03a.725.725 0 0 1 .526-.213c.207 0 .382.071.527.213L4.6 12.19l5.078-4.977c.14-.14.33-.216.527-.212.206 0 .382.07.526.212l1.053 1.03c.142.134.22.321.217.516Z">
                         </path>
                       </svg>
-                      <span style="color:#2F1C6A; " class="text-sm">
+                      <span style="color:#271366;" class=" text-sm">
                         <span class="text-sm font-semibold">
                           Backups Semanais </span>
                       </span>
@@ -1407,18 +1409,13 @@
                 <img src="assets/img/correct.png" alt=" apoio">
                 Otimize o seu fluxo de trabalho com o alojamento gerido do WordPress.
               </p>
-              <div class="text-center text-lg-start">
-                <a href="#pricing"
-                  class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                  <span>Registar agora</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
+
             </div>
           </div>
 
-          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/infolinda_solutions.png" class="img-fluid ml-2" alt="Solução tudo-em-um">
+          <div class="col-lg-6 order-1 order-lg-2 hero-img aos-init aos-animate" data-aos="zoom-in"
+            data-aos-delay="200">
+            <img src="assets/img/infolinda_solutions.png" class="img-fluid" alt="Solução tudo-em-um">
           </div>
 
         </div>
