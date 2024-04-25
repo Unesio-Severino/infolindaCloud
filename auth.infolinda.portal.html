@@ -1,98 +1,118 @@
 <!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com-->
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="assets/scripts/style.css" />
-  <title>Infolinda - Portal</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Infolinda - Portal do Cliente </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/scripts/style.css">
+
+  <!-- Boxicons CSS -->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body>
-  <div class="container">
-    <div class="forms-container">
-      <div class="signin-signup">
-        <form action="#" class="sign-in-form">
-          <h2 class="title">Entrar</h2>
-          <div class="input-field">
-            <i class="fas fa-user"></i>
-            <input type="text" placeholder="Username" />
-          </div>
-          <div class="input-field">
-            <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Password" />
-          </div>
-          <input type="submit" value="Log in" class="btn solid" />
-          <p class="social-text">Ou Conecte-se</p>
-          <div class="social-media">
-            <a href="#" class="social-icon">
-              <i class="fab fa-google"></i>
-            </a>
-            <a href="#" class="social-icon">
-              <i class="fab fa-github"></i>
-            </a>
+  <section class="container forms">
+    <div class="form login">
+      <div class="form-content">
+        <header>Entrar</header>
+        <form action="#">
+          <div class="field input-field">
+            <input type="email" placeholder="Email" class="input">
           </div>
 
-        </form>
-        <form action="#" class="sign-up-form">
-          <h2 class="title">Registar-se</h2>
-          <div class="input-field">
-            <i class="fas fa-user"></i>
-            <input type="text" placeholder="Username" />
+          <div class="field input-field">
+            <input type="Senha" placeholder="Senha" class="password">
+            <i class='bx bx-hide eye-icon'></i>
           </div>
-          <div class="input-field">
-            <i class="fas fa-envelope"></i>
-            <input type="email" placeholder="Email" />
+
+          <div class="form-link">
+            <a href="#" class="forgot-pass">Esqueceu a sua senha?</a>
           </div>
-          <div class="input-field">
-            <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Password" />
-          </div>
-          <input type="submit" class="btn" value="Registar-se" />
-          <p class="social-text">Ou Conecte-se</p>
-          <div class="social-media">
-            <a href="#" class="social-icon">
-              <i class="fab fa-google"></i>
-            </a>
-            <a href="#" class="social-icon">
-              <i class="fab fa-github"></i>
-            </a>
+
+          <div class="field button-field">
+            <button>Conecte-se</button>
           </div>
         </form>
+
+        <div class="form-link">
+          <span>Ainda nao e membro? <a href="#" class="link signup-link">Registrar-se</a></span>
+        </div>
       </div>
+
+      <div class="line"></div>
+
+      <div class="media-options">
+        <a href="#" class="field github">
+          <i class='bx bxl-github github-icon'></i>
+          <span>Login with Github</span>
+        </a>
+      </div>
+
+      <div class="media-options">
+        <a href="#" class="field google">
+          <img src="assets/img/google.png" alt="" class="google-img">
+          <span>Login with Google</span>
+        </a>
+      </div>
+
     </div>
 
-    <div class="panels-container">
-      <div class="panel left-panel">
+    <!-- Signup Form -->
 
-        <div class="content">
-          <h3>Ainda não é membro?</h3>
-          <p>
-            Ainda não é membro? Escolha um plano de hospedagem e comece agora!
-          </p>
-          <button class="btn transparent" id="sign-up-btn">
-            Registar-se
-          </button>
+    <div class="form signup">
+      <div class="form-content">
+        <header>Registrar-se</header>
+        <form action="#">
+          <div class="field input-field">
+            <input type="email" placeholder="Email" class="input">
+          </div>
+
+          <div class="field input-field">
+            <input type="senha" placeholder="Criar nova senha" class="password">
+          </div>
+
+          <div class="field input-field">
+            <input type="senha" placeholder="Confirmar a senha" class="password">
+            <i class='bx bx-hide eye-icon'></i>
+          </div>
+
+          <div class="field button-field">
+            <button>Registrar</button>
+          </div>
+        </form>
+
+        <div class="form-link">
+          <span>Ja tem conta? <a href="#" class="link login-link">Entrar</a></span>
         </div>
-        <!-- <img src="assets/img/login-padlock.svg" class="image" alt="" /> -->
       </div>
-      <div class="panel right-panel">
-        <div class="content">
-          <h3>Ja tens um plano de hospedagem ?</h3>
-          <p>
-            Comece agora. e desfruta das nossas promoções.
-          </p>
-          <button class="btn transparent" id="sign-in-btn">
-            Conecte-se
-          </button>
-        </div>
-        <!-- <img src="assets/img/register.svg" class="image" alt="" /> -->
+
+      <div class="line"></div>
+
+      <div class="media-options">
+        <a href="#" class="field github">
+          <i class='bx bxl-github github-icon'></i>
+          <span>Login with Github</span>
+        </a>
       </div>
+
+      <div class="media-options">
+        <a href="#" class="field google">
+          <img src="assets/img/google.png" alt="" class="google-img">
+          <span>Login with Google</span>
+        </a>
+      </div>
+
     </div>
-  </div>
+  </section>
 
-  <script src="assets/scripts/app.js"></script>
+  <!-- JavaScript -->
+  <script src="assets/scripts/script.js"></script>
 </body>
 
 </html>
